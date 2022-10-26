@@ -15,6 +15,12 @@ def encode_context(context: str, tokenizer):
     context = tokenizer.encode(context, add_special_tokens=False)
     return context
 
+def encode_contexts(contexts, tokenizer):
+    encoded_contexts = []
+    for context in contexts:
+        encoded_contexts.append(encode_context(context, tokenizer))
+    return encoded_contexts
+
 
 def encode_question_context_pair(question: str, context: str, tokenizer):
     question = encode_question(question, tokenizer)
