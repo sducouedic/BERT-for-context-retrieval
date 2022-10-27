@@ -29,6 +29,7 @@ python3 main.py --question "In what country is Normandy located?"
 I didn't have the time to finish all I planned, here is what is missing:
 
 * Fasten the computation by using batches and doing inference using torch tensor (see `src/eval.py`)
+* Get feedback on the actual rank of the correct context
 * Implement [**MRR**](https://machinelearning.wtf/terms/mean-reciprocal-rank-mrr/) evaluation metric on dataset
 * Fine-tuning the model
-* Add new arguments to the paser to handle test dataset
+* Add new arguments to the parser to handle test dataset

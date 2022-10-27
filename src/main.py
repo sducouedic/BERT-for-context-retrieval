@@ -17,8 +17,12 @@ tokenizer = BertTokenizer.from_pretrained(models_path + 'tokenizer/vocab.txt')
 
 dataset_path = '../data/SQuAD-dev-v2.0.json'
 
+print("create dataset...\n")
 questions, contexts, encoded_contexts = create_squad_dataset(dataset_path, tokenizer)
+print("create dataset done \n")
 evaluator = Evaluator(model, tokenizer, questions, contexts, encoded_contexts)
+
+print("doing inference...\n")
 first_context, target_rank = evaluator.inference(args.question)
 
 print('\n\n\n')
