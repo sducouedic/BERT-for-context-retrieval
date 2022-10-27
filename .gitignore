@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+models/BERT_Base_trained_on_MSMARCO/
