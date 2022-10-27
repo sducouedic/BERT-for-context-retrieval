@@ -24,7 +24,7 @@ cd src
 python3 main.py --question "In what country is Normandy located?"
 ```
 
-# Future work 
+## Future work 
 
 I didn't have the time to finish all I planned, here is what is missing:
 
