@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 models/BERT_Base_trained_on_MSMARCO/
+models/BERT_for_passage_ranking/
