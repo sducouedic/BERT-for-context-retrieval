@@ -10,10 +10,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-* Download  and unzip [BERT pretrained for passage reranking](https://drive.google.com/file/d/1tEHjpsAgvTVIqFySiSVl4DKaYVx8ltS5/view?usp=sharing) in `/models/`. You should now have the following files:
+* Download  and unzip [BERT pretrained for passage reranking](https://drive.google.com/file/d/1tEHjpsAgvTVIqFySiSVl4DKaYVx8ltS5/view?usp=sharing) in `/models/`. You should now have the following files: 
     * `/models/BERT_for_passage_ranking/config.json`
     * `/models/BERT_for_passage_ranking/pytorch_model.bin`
 
+The model is taken from [link](https://github.com/nyu-dl/dl4marco-bert/tree/a75f26a3342a38f146fc9f0958bf458be7a68e15) which adapted BERT for passage ranking. The model is converted to PyTorch using Hugging Face's [transformers](https://huggingface.co/docs/transformers/index) library. 
 
 ## Inference
 
